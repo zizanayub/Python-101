@@ -162,3 +162,59 @@ print(10**3) #Exponent
 x = 10
 x += 2
 print(x)
+
+
+
+
+
+# 10. Operator Precendence
+# Exercise
+x = (2+3)*10-3
+print(x)
+
+
+
+
+# 11. Math Functions
+x = 2.9
+print(round(x))
+x = -2.9
+print(abs(x))
+
+
+
+# 11.01. Math module
+import math 
+print(math.ceil(2.9))
+print(math.floor(2.9))
+
+
+
+# 12. IF Statements
+is_hot = False
+is_cold = True
+
+if is_hot:
+    print("It's a hot day.")
+    print("Drink plenty of water.")
+elif is_cold:
+    print("It's a cold day.")
+    print("Wear warm cloths.")
+else:
+    print("It's a lovely day!")
+print("Enjoy your day!")
+
+
+
+
+# 12.01. Exercise
+price = 1000000
+has_good_credit = True
+
+
+if has_good_credit:
+    down_payment = price*0.1
+else:
+    down_payment = price*0.2
+
+print(f"down payment: {down_payment}") 
