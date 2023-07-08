@@ -76,3 +76,49 @@ birth_year = int(input("birth_year: "))
 print(type(birth_year))
 age = 2023-int(birth_year)
 print(type(age))
+
+
+
+
+
+
+# 06. Python Strings 
+course = 'Python for "beginners"'
+print(course)
+
+
+
+# 06.01. Indexing.
+print(course[0])   #Will give output of first character.
+print(course[-1])  #Will give output of last character. 
+
+
+
+#06.02. Indexing (Staring:Ending)
+print(course[0:3]) #Pyt
+print(course[2:]) #thon......
+print(course[:5]) #Pytho
+
+
+
+#06.03. Exercise
+name = 'jeniffer'
+print(name[1:-1])
+
+
+
+
+# 07. Formatted Strings
+
+# 07.01. How we do concatenation normally
+first = 'John'
+last = 'Smith'
+message = first + ' [' + last + '] is a coder!'
+print(message)
+
+
+# 07.02. How we can do with 'Formatted String'
+first = 'John'
+last = 'Smith'
+message = f'{first} [{last}] is a coder'
+print(message)
