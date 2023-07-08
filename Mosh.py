@@ -324,3 +324,64 @@ elif len(name) > 50:
     print("Name must be 50 characters long!")
 else:
     print("Name is Ok!")
+
+
+
+
+
+
+
+# 15. Project: Weight converter
+weight = int(input("Enter your weight: "))
+unit = input("(L)bs or (K)g: ")
+
+if unit.upper() == "L":
+    converted = weight*0.45
+    print(f"You are {converted} kg")
+elif unit.upper() == "K":
+    converted = weight/0.45
+    print(f"You are {converted} pounds")
+
+
+
+
+
+
+
+# 16. While loops
+i = 0
+while i <= 5:
+    print(i)
+    i += 1
+print("Done")
+
+
+
+# 16.01. print stars by while loop
+i = 0
+while i < 5:
+    print('*' * i)
+    i += 1
+print("Done")
+
+
+
+
+
+
+
+
+# 17. Building a guessing game
+secret_number = 10
+guessing_count = 0
+guessing_limit = 3
+
+while guessing_count < guessing_limit:
+    guess_number = int(input("Guess the number: "))
+    guessing_count += 1
+    if guess_number == secret_number:
+        print(f"You won! The secret number is {secret_number}")
+        break
+else:
+    print(f"You failed! You tried all {guessing_count} attempts!")
+
