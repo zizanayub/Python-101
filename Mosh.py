@@ -122,3 +122,25 @@ first = 'John'
 last = 'Smith'
 message = f'{first} [{last}] is a coder'
 print(message)
+
+
+
+
+
+# 08. String Methods
+course = 'Python for Beginners'
+print(len(course))  #Length Function
+
+# Upper and Lower Methods
+print(course.upper()) #Converts to upper
+print(course.lower()) #Converts to lower 
+
+# Find Method
+print(course.find('P'))
+print(course.find('Beginners'))
+
+#Replace Method
+print(course.replace('Beginners','Absolute Beginners'))
+
+#IN Operator
+print('Python' in course)
