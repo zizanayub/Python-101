@@ -144,3 +144,21 @@ print(course.replace('Beginners','Absolute Beginners'))
 
 #IN Operator
 print('Python' in course)
+
+
+
+
+
+
+
+# 09. Arithmetic Operators
+print(10/3)
+print(10//3) #Division, but it will output int only
+print(10%3)
+print(10**3) #Exponent
+
+
+# 09.01. Augmented Arithmetic Operator
+x = 10
+x += 2
+print(x)
