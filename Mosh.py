@@ -385,3 +385,55 @@ while guessing_count < guessing_limit:
 else:
     print(f"You failed! You tried all {guessing_count} attempts!")
 
+
+
+
+
+
+
+# 18. Car game
+command = True
+while command:
+    command= input("> ").lower()
+    if command == "start":
+        print("Car started!")
+    elif command == "stop":
+        print("Car stopped")
+    elif command == "help":
+        print("""
+start - to start,
+stop - to stop,
+quit - to quit the operations""")
+    elif command == "quit":
+        print("Ok!Thanks!")
+        break
+    else:
+        print("Sorry! I didn't understand!")
+
+
+
+
+# 18.01. Car game (Make it to the advanced level)
+
+
+# Need to understand 
+
+
+command = ""
+started = False
+while True:
+    command = input("> ").lower()
+    if command == "start":
+        if started:
+            print("Car is already started!")
+        else:
+            started = True
+            print("Car started!") 
+        
+    elif command == "stop":
+        if not started:
+            print("Car is already stopped!")
+        else:
+            started = False
+            print("Car stopped!")
+
