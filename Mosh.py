@@ -504,3 +504,62 @@ for item in numbers:
     for count in range(item):
         output+="X"
     print(output)
+
+
+
+
+
+
+
+
+
+# 21.Lists
+list = [1,2,3,4,5]
+print(list[2])
+print(list[-1])
+print(list[:3])
+print(list[1:4])
+print(list[2:])
+print(list[:])
+list[2] = 40
+print(list)
+new_value = list[2]
+print(new_value)    
+
+
+
+# 21.Exercise: Find the largest number in a list
+numbers = [2,3,1,4,10,6]
+max = numbers[0]
+
+for number in numbers:
+    if number > max:
+        max = number 
+print(max)
+
+
+
+
+
+
+
+
+#22.2D lists
+matrix=[
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+print(matrix[0])
+print(matrix[0][1])
+
+#Modify
+matrix[0][2] = 23
+print(matrix)
+
+
+#Print all elements in the nested loop
+for row in matrix:
+    for number in row:
+        print(number)
