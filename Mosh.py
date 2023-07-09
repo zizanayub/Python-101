@@ -437,3 +437,70 @@ while True:
             started = False
             print("Car stopped!")
 
+
+
+
+
+
+
+
+
+# 19. For loops
+
+# String
+for item in "Python":
+    print(item)
+
+
+#List
+for item in [1,2,3,5]:
+    print(item)
+for element in ['John','Mick','Nick']:
+    print(element)
+
+
+#Range
+for item in range(10):
+    print(item)
+for item in range(5,10):
+    print(item)
+for item in range(5,10,2):
+    print(item)
+
+
+
+#19.01. Exercise
+price = [10,20,30]
+total = 0
+for number in price:
+    total += number 
+print(total)
+
+
+
+
+
+
+
+
+#20.Nested Loop
+for i in range(4):
+    for j in range(3):
+        print(f"({i}, {j})")
+
+
+# 20.01.Challenge
+# Draw an F with list
+
+numbers = [5,2,5,2,2]
+for number in numbers:
+    print('X'* number)
+
+
+#With nested loop
+numbers = [5,2,5,2,2]
+for item in numbers:
+    output=""
+    for count in range(item):
+        output+="X"
+    print(output)
