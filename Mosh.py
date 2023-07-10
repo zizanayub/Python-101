@@ -732,7 +732,7 @@ print(answer)
 
 
 
-
+# Using get()
 answer = ""
 input_the_numbers = input()
 list_of_outputs = {
@@ -745,3 +745,68 @@ list_of_outputs = {
 for number in input_the_numbers:
     answer += list_of_outputs.get(number,"!")+" "  #Exceptional usage of get method 
 print(answer)
+
+
+
+
+
+
+
+
+# 28. Functions 
+def greet_user():
+    print("Hi There")
+
+
+greet_user()
+# 2 blank lines after function definition is required.
+
+
+
+
+
+
+# 29.Parameters
+def greet_user(firstname,lastname):
+    print(f"Hi {firstname} {lastname}")
+
+greet_user("Zizan","Ayub")
+
+
+
+
+
+
+
+# 30. Keyword arguments
+
+# 30.01. Why we use?
+
+def greet_user(firstname,lastname):
+    print(f"Hi {firstname} {lastname}")
+    print("Welcome Abroad!")
+
+
+greet_user("Zizan")
+
+# ERROR: greet_user() missing 1 required positional argument: 'lastname'
+
+
+
+# 30.02. Keyword Arguments
+
+def greet_user(firstname,lastname):
+    print(f"Hi {firstname} {lastname}!")
+    print("Welcome Abroad!")
+
+
+greet_user ("Zizan",lastname = "Ayub")
+    
+
+
+
+
+
+
+
+
