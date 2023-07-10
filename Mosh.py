@@ -675,3 +675,73 @@ print(x,y,z)
 coordinates = [23,12,32]
 x,y,z = coordinates
 print(x,y,z)
+
+
+
+
+
+
+
+# 26.Dictinaries
+
+customer = {
+    "name": "Zizan",
+    "age" : 24,
+    "is_employed" : True
+    }
+
+
+print(customer)
+print(customer["name"])
+
+
+
+# Get function
+print(customer.get("birthdate"))    #None
+
+# New value addition using Get Function
+print(customer.get("birthdate","31 Dec, 1998"))
+
+
+# Update
+customer["name"] = "Zizan Ayub"
+customer["birthdate"] = "01 Jan 1999"
+print(customer)
+
+
+
+
+# 26.01. Exercise
+
+
+# My solution
+answer = ""
+input_the_numbers = input()
+list_of_outputs = {
+    '1' : 'One',
+    '2' : 'Two',
+    '3' : 'Three',
+    '4' : 'Four'
+}
+for number in input_the_numbers:
+    if number in list(list_of_outputs.keys()):    #Keys() method 
+        answer+=list_of_outputs[number]+" "
+    else:
+        answer+="!"+" "
+print(answer)
+
+
+
+
+answer = ""
+input_the_numbers = input()
+list_of_outputs = {
+    '1' : 'One',
+    '2' : 'Two',
+    '3' : 'Three',
+    '4' : 'Four'
+}
+
+for number in input_the_numbers:
+    answer += list_of_outputs.get(number,"!")+" "  #Exceptional usage of get method 
+print(answer)
