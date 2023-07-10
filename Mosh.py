@@ -563,3 +563,115 @@ print(matrix)
 for row in matrix:
     for number in row:
         print(number)
+
+
+
+
+
+
+
+# 23. List Methods
+
+numbers = [2,3,1,5,6,0]
+
+
+# Append
+numbers.append(3)
+print(numbers)
+
+
+# Insert (Used to insert in a specific index)
+numbers.insert(1,3)
+print(numbers)
+
+
+#Remove
+numbers.remove(5)
+print(numbers)
+
+
+# Hop (Removing last item on the list)
+numbers.pop()
+print(numbers)
+
+
+
+# Index (Outputs the index number of an element)
+print(numbers.index(1))
+
+
+
+# In operator 
+print(5 in numbers)
+
+
+# Sort (Ascending)
+numbers.sort()
+print(numbers)
+
+
+# reverse
+numbers.reverse()
+print(numbers)
+
+
+
+# Copy
+numbers_duplicated = numbers.copy()
+print(numbers)
+numbers_duplicated.append(9)
+print(numbers_duplicated)
+
+
+
+
+
+# Exercise
+# Write a program to remove duplicates in a list
+
+numbers_list = [1,2,3,4,3,2,1]
+unique = []
+
+for number in numbers_list:
+    if number not in unique:
+        unique.append(number)
+print(unique)
+
+
+
+
+
+
+
+
+
+# 24. tuples
+
+
+# Indexing
+numbers = (1,2,3,4,7)
+print(numbers[1])
+
+
+# Count
+print(numbers.count(7))
+
+
+
+
+
+
+
+# 25.Unpacking
+
+
+# With tuples
+coordinates = (1,2,3,7)
+x,y,z,a = coordinates
+print(x,y,z)
+
+
+# With list
+coordinates = [23,12,32]
+x,y,z = coordinates
+print(x,y,z)
