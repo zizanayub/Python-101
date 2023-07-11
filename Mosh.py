@@ -947,3 +947,37 @@ print(point2.x)
 
 
 
+
+
+# 36. Cnstructors
+
+class Point:
+
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y 
+    
+
+point1 = Point(10,20)
+print(point1.x, point1.y)
+
+
+
+
+
+# 36.01. Exercise
+class Person:
+    
+    def __init__(self,name):
+        self.name = name 
+
+
+    def greet(self):
+        print(f"Hi! This is {self.name}")
+
+
+
+new_employee = Person("John Smith")
+print(new_employee.name)
+new_employee.greet()
+
