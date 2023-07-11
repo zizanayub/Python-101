@@ -981,3 +981,30 @@ new_employee = Person("John Smith")
 print(new_employee.name)
 new_employee.greet()
 
+
+
+
+
+
+
+
+
+
+# 37. Inheritence 
+
+
+class Mammal:
+
+    def walk(self):
+        print("Walk")
+
+
+class Dog(Mammal):
+
+    def bark(self):
+        print("Bark")
+
+
+
+dog1 = Dog()
+dog1.bark()
