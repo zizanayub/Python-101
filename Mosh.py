@@ -753,6 +753,28 @@ print(answer)
 
 
 
+# 27. Emoji Converter 
+message = input("> ")
+words = message.split(' ')
+emojis = {
+    ":)" : "Happy Emoji",
+    ":(" : "Sad emoji"
+}
+
+answer = " "
+for word in words:
+    answer += emojis.get(word,word) + " "
+print(answer)
+
+
+
+
+
+
+
+
+
+
 # 28. Functions 
 def greet_user():
     print("Hi There")
@@ -802,6 +824,92 @@ def greet_user(firstname,lastname):
 
 greet_user ("Zizan",lastname = "Ayub")
     
+
+
+
+
+
+
+# 31. Return Statement
+
+
+
+# Basic Syntex 
+def square(number):
+    return number * number 
+
+
+result = square(3)
+print(result)
+
+
+
+# If there is no return statement
+
+def square(number):
+    print(number*number)
+
+print(square(3))
+
+# Explanation is in the readme file
+
+
+
+
+
+
+
+# 32. Creating a reusable function
+
+def emoji_converter(message):
+    words = message.split(' ')
+    emojis = {
+        ":)" : "Happy Emoji",
+        ":(" : "Sad Emoji"
+    }
+    
+    answer = " "
+    for word in words:
+        answer += emojis.get(word,word)+" "
+    return answer
+
+
+message = input("> ")
+print(emoji_converter(message))
+
+
+
+
+
+
+
+# 33. Exceptions
+
+
+
+# Single exceptions
+try:
+    age = int(input("Age> " ))
+    print(age)
+except ValueError:
+    print('Invalid Value')     #If the user inputs different data types expcept integer or wwhole number 
+
+
+
+
+
+# We can use multiple exceptions
+
+try:
+    age = int(input("Age> "))
+    income = 20000
+    risk = income / age
+    print(age)
+
+except ZeroDivisionError:
+    print("Age can't be zero")
+except ValueError:
+    print("Invalid Value")
 
 
 
