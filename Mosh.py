@@ -918,3 +918,32 @@ except ValueError:
 
 
 
+# 35. Classes
+
+class Point:
+    def draw(self):
+        print("Draw")
+    def move(self):
+        print("Move")
+
+
+point1 = Point()    # Object
+point1.x = 19   #Attribute
+point1.y = 20   #Attribute
+print(point1.x)
+
+#Methods
+point1.draw()
+point1.move()
+
+
+
+
+
+# It will give error. Because no object named 'point2' has been created
+print(point2.x)
+
+
+
+
+
