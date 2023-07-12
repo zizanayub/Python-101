@@ -1214,3 +1214,59 @@ class Dice:
     
 dice_roll = Dice()
 print(dice_roll.roll())
+
+
+
+
+
+
+
+
+
+# 41. Files and Directories
+
+# exists()
+
+
+from pathlib import Path
+
+path = Path('ecommerce')
+print(path.exists())
+
+path2= Path('ecommerce1')
+print(path2.exists())
+
+
+
+# Creating new directories
+
+
+from pathlib import Path 
+
+path = Path('emails')
+print(path.mkdir())
+
+
+
+
+
+# Removing directories
+
+
+from pathlib import Path
+
+path = Path('emails')
+print(path.rmdir())
+
+
+
+
+# Finding all files
+
+from pathlib import Path 
+
+
+path = Path('ecommerce')
+
+for file in path.glob('*.py'):
+    print(file)
