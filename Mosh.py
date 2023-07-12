@@ -1159,3 +1159,58 @@ from ecommerce import shipping
 
 shipping.calc()
 shipping.ship()
+
+
+
+
+
+
+
+# 40. Generating Random Values
+
+
+# Generate random numbers 3 times
+
+import random 
+
+
+for i in range(3):
+    print(random.random())
+
+
+
+# Generate random numbers with range 
+
+import random 
+
+for i in range(3):
+    print(random.randint(10,20))
+
+
+
+
+# Choice()
+
+import random
+members = ['Shihab','Zizan','Mish']
+
+leader = random.choice(members)
+
+print(leader)
+
+
+
+
+
+# Exercise (Rolling Dice)
+import random 
+
+
+class Dice:
+    def roll(self):
+        first_turn= random.randint(1,6)
+        second_turn = random.randint(1,6)
+        return first_turn, second_turn
+    
+dice_roll = Dice()
+print(dice_roll.roll())
