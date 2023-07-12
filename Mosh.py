@@ -1008,3 +1008,154 @@ class Dog(Mammal):
 
 dog1 = Dog()
 dog1.bark()
+
+
+
+
+
+
+
+
+
+# 38. Modules
+
+
+
+# First Method 
+import Converter
+
+print(Converter.kg_to_lbs(13))
+print(Converter.lbs_to_kg(90))
+
+
+# 2nd Method 
+
+import Converter
+from Converter import kg_to_lbs
+
+print(kg_to_lbs(12))
+
+
+
+
+
+
+# 38.01. Exercise (Maximum Number)
+
+class NumberGame:
+    def max_num():
+        numbers = [1,2,3,4,2]
+
+        max = numbers[0]
+
+        for number in numbers:
+            if number > max:
+                max = number
+
+        return max 
+    
+
+
+
+# First Method 
+
+import Maximum
+
+print(Maximum.NumberGame.max_num())
+
+
+
+
+# 2nd Method 
+
+import Maximum 
+
+from Maximum import NumberGame
+
+print(NumberGame.max_num())
+
+
+
+
+
+# 38.02. Exercise (Using only funtion)
+
+# Maximum module 
+def max_number(numbers):
+    
+    max = numbers[0]
+
+    for number in numbers:
+        if number > max:
+            max = number
+    return max
+
+# Code execution
+
+
+
+# First method 
+from Maximum import max_number
+
+list_of_numbers = [1,2,3,4,1,2,3,7]
+result = max_number(list_of_numbers)
+print(result)
+
+
+
+# 2nd method
+import Maximum
+
+numbers = [1,7,98]
+print(Maximum.max_number(numbers))
+
+
+
+
+
+
+
+
+
+
+# 39.Packages
+# It will be described more describingly in a readme file
+# There must be an __init__.py
+
+
+
+
+# Shipping.py
+def ship():
+    print("Shipped")
+
+
+def calc():
+    print("Calculated")
+
+
+
+
+
+
+
+
+# First Method
+import ecommerce.shipping
+
+ecommerce.shipping.ship()
+
+
+
+# 2nd method 
+from ecommerce.shipping import ship
+
+ship()
+
+
+
+# 3rd Method 
+from ecommerce import shipping
+
+shipping.calc()
+shipping.ship()
