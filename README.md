@@ -72,7 +72,7 @@ print(name,is_published)
 ```
 
 
-
+Output: 
 ```Output
 Zizan True
 ```
@@ -101,4 +101,44 @@ Output:
 ```Output
 The patient's name is John Smith, aged 20
 John Smith is a new patient
+```
+
+
+
+## 04. Getting Input
+
+```Python
+name = input("What's your name?:")
+print(f"Hi {name}")
+```
+
+
+Output:
+
+```Output
+What's your name?:Zizan
+Hi Zizan
+```
+
+
+
+### 04.01. Exercise
+
+Get input: name and favorite color.
+Print: For example, john likes red.
+
+
+```Python
+name = input("What's your name?: ")
+fav_color = input("What's your favorite color?: ")
+print(f"{name} likes {fav_color}")
+```
+
+
+Output:
+
+```Output
+What's your name?: Zizan
+What's your favorite color?: Red
+Zizan likes Red
 ```
