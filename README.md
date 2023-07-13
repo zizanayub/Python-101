@@ -135,6 +135,30 @@ print(f"{name} likes {fav_color}")
 ```
 
 
+
+## 05. Type Conversion
+
+
+```Python
+# Type conversion
+
+# string to int
+
+birth_year = input('Birth Year: ')
+age = 2023 - int(birth_year)
+print(age)
+
+
+# string to bool
+name = "Zizan"
+print(bool(name))
+
+
+# int to float
+number = 89
+print(float(number))
+```
+
 Output:
 
 ```Output
