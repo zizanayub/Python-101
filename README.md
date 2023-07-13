@@ -26,3 +26,79 @@ print ("Zizan")
 3. Interpreter = An interpreter is a program that reads and executes Python code.
 It is responsible for translating and executing each line of Python code in real-time.
 ```
+
+
+
+## 03. Data types
+
+### 03.01. Number types 
+
+
+```Python
+## Number types 
+
+# decimal
+a_decimal = 11
+print(a_decimal)
+
+# hexadecimal 
+print(hex(a_decimal)) #0xb
+
+#octal
+print(oct(a_decimal))
+
+#float
+a_float = 1.22
+print(a_float)
+```
+
+
+Output: 
+
+```result
+11
+0xb
+0o13
+1.22
+```
+
+### 03.02. String and Boolean
+
+
+```Python
+name = 'Zizan'
+is_published = True
+print(name,is_published)
+```
+
+
+
+```Output
+Zizan True
+```
+
+
+### 03.03. Exercise
+
+A patient named John Smith (He is a new patient), 20 years old. Express this statement with variables.
+
+
+```Python
+name = 'John Smith'
+age = 20
+new_patient = True
+
+
+print(f"The patient's name is {name}, aged {age}")
+
+if new_patient == True:
+    print(f"{name} is a new patient")
+```
+
+
+Output:
+
+```Output
+The patient's name is John Smith, aged 20
+John Smith is a new patient
+```
