@@ -136,8 +136,18 @@ print(f"{name} likes {fav_color}")
 
 
 
-## 05. Type Conversion
 
+Output:
+
+```Output
+What's your name?: Zizan
+What's your favorite color?: Red
+Zizan likes Red
+```
+
+
+
+## 05. Type Conversion
 
 ```Python
 # Type conversion
@@ -159,10 +169,33 @@ number = 89
 print(float(number))
 ```
 
+
 Output:
 
 ```Output
-What's your name?: Zizan
-What's your favorite color?: Red
-Zizan likes Red
+Birth Year: 1998
+25
+True
+89.0
+```
+
+
+### 05.01. Exercise
+
+There is weight in pounds. Convert it to kg
+
+
+```Python
+input_your_weight = int(input("What's your weight in pounds?: "))
+print(f"Weight in kgs: {input_your_weight*0.45}")
+```
+
+
+Output:
+
+
+
+```Output
+What's your weight in pounds?: 56
+Weight in kgs: 25.2
 ```
