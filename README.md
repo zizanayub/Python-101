@@ -222,3 +222,34 @@ print(course_updated)
 
 ```
 
+
+### 06.02. Indexing
+
+```Python
+print(course[0])
+print(course[-1])
+
+```
+
+### 06.03. Indexing (Starting:Ending)
+
+```Python
+print(course[0:3])
+print(course[1:])
+print(course[:5])
+```
+
+
+Output:
+
+```Output
+Python for Beginners
+Python
+for advanced students
+P
+s
+Pyt
+ython for Beginners
+Pytho
+```
+
