@@ -199,3 +199,25 @@ Output:
 What's your weight in pounds?: 56
 Weight in kgs: 25.2
 ```
+
+
+
+
+
+## 06. Python Strings
+
+### 06.01. Basic syntax 
+
+```Python
+
+## Strings in single line
+course = "Python for Beginners"
+print(course)
+
+
+## Strings in multiple lines
+course_updated = "Python for Advanced Students"
+print(course_updated)
+
+```
+
