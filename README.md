@@ -216,7 +216,8 @@ print(course)
 
 
 ## Strings in multiple lines
-course_updated = "Python for Advanced Students"
+course_updated = '''Python
+for Advanced Students '''
 print(course_updated)
 
 ```
